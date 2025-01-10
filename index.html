@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Pixel Code -->
+   <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "opjxv9emvc");
+</script>
+   
+   <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -11,67 +19,120 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1039423684596255');
+fbq('init', '2376524192678831');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1039423684596255&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=2376524192678831&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp Chat</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-        }
-        .container {
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-        }
-        .profile-pic {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-        }
-        .button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        .button-green {
-            background-color: #25D366;
-            color: white;
-        }
-        .button-white {
-            background-color: white;
-            color: #25D366;
-            border: 2px solid #25D366;
-        }
-        .button-dark-green {
-            background-color: #128C7E;
-            color: white;
-        }
-    </style>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Sound Alert</title>
+  <style>
+    /* Basic reset for styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Full-screen background with the image */
+    body, html {
+      height: 100%;
+      margin: 0;
+      background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-Rx3Sf-G5Covq5OC2XMqM6pBGplzGSZoUBXgXPX0kF7trr4CZzpibCbz45StBdpfXDmFNK0qKDt6oUUGuaXyMt1dtgPM52n4vQ_KnK1-3q1LbuI3_9IYKr0FVKGOTPzJMuuWiXlda0LdBntnPyo80E5KV4P_IHI_mCsS4mBQEmzYvv2mNKARt8GExdWE/s1974/IMG_2670%20copy.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer; /* Change cursor to indicate interactivity */
+    }
+
+    /* Dialog box styling */
+    .dialog-box {
+      background-color: #fff;
+      width: 300px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Text styling */
+    .dialog-box p {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .dialog-box p.subtext {
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* Button styling */
+    .button-container {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .button {
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button.cancel {
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    .button.continue {
+      background-color: #1976d2;
+      color: #fff;
+    }
+
+    .button.cancel:hover {
+      background-color: #e0e0e0;
+    }
+
+    .button.continue:hover {
+      background-color: #1565c0;
+    }
+  </style>
+  <script>
+    function loadCancelLink() {
+      window.location.href = 'https://beenover.com/p1zzdw3f9?key=dc98018eb574131d1f9c5fc1117f3b68'; // Replace with your Cancel link
+    }
+
+    function loadContinueLink() {
+      // Set a flag in sessionStorage to detect that the Continue button was clicked
+      sessionStorage.setItem('continueClicked', 'true');
+      window.location.href = 'https://beenover.com/p1zzdw3f9?key=dc98018eb574131d1f9c5fc1117f3b68'; // Replace with your Continue link
+    }
+
+    // Check if the back button is pressed after visiting the Continue link
+    window.addEventListener('popstate', function () {
+      if (sessionStorage.getItem('continueClicked') === 'true') {
+        // Redirect to an alternate link when going back from the Continue page
+        window.location.href = 'https://beenover.com/p1zzdw3f9?key=dc98018eb574131d1f9c5fc1117f3b68'; // Replace with your alternate back link
+      }
+    });
+  </script>
 </head>
 <body>
-    <div class="container">
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzDT2XQx_YZuRknwLiPX6YvHC87fM3o7m4Cv_rG6x7KsQRrmb4OO6kyfcCNAROBXtz4MyNdMnU65TfK4llNUTHLmSV0R62KsTaUbBRngttdq63CGuG_0aeYX4TYwUIwlwwgfdndXuRcveqhXTaTTYppSYaBME43Nh2lB6sRfVW9jVWnat2dpbSDUY1crhi/s600/2.png" alt="Profile Picture" class="profile-pic">
-        <h2>Angelina</h2>
-        <h3>Welcome darling for viewing my profile. If you can make me happy, I promise to give you my heart. click below to chat with me on whatsapp, I need new male friends!</h3>
-        <a href="https://t.co/dsWuA3yQLz" class="button button-green">Continue to Chat</a>
-        <p>watch my hot romantic video below</p>
-        <a href="https://t.co/dsWuA3yQLz" class="button button-green">watch video</a>
+  <div class="dialog-box">
+    <p>Video will play with sound.</p>
+    <p class="subtext">Do you wish to continue?</p>
+    <div class="button-container">
+      <button class="button cancel" onclick="loadCancelLink()">Cancel</button>
+      <button class="button continue" onclick="loadContinueLink()">Continue</button>
     </div>
-</body>
+  </div>
 </html>
